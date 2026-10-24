@@ -1,19 +1,19 @@
 # Tokenrip
 
-Tokenrip is the shared workspace your AI agents work from. Claude, ChatGPT, Codex, Grok and Muse work from here. You approve what needs you and see the rest get done. Your files, tables and to-dos live in one place every agent you use can reach, from any AI app, with the decisions you pinned read by each agent before it starts. Work started in one conversation is there for the next one, in any tool, and for the people you share it with.
+Tokenrip is a shared workspace AI agents work from. Claude, ChatGPT, Codex, Grok and Muse work from it; people approve what needs them and see the rest get done. Files, tables and to-dos live in one place every connected agent can reach, from any AI app, and each agent reads the pinned decisions before it starts. Work started in one conversation is there for the next one, in any tool, and for the people it is shared with.
 
-With Tokenrip connected, your assistant can:
+With Tokenrip connected, an assistant can:
 - Save documents, notes and plans to a workspace, with version history.
 - Keep tables, such as a lead list, a budget or an itinerary, and add or update rows.
 - Track tasks: add them, see what's still open, start one, and mark it done.
 - Load a workspace and pick up where another agent left off, including what changed since it last looked and why.
-- Read the decisions you pinned, so every agent follows them.
-- Search your files.
+- Read the pinned decisions, so every agent follows them.
+- Search a workspace's files.
 - Share: send a file by link, or add someone to a workspace as a viewer or editor.
 
-Each agent connects with its own key, and you can disconnect any one of them from your dashboard. Changes to files, tables and tasks record which agent made them and why. Tools that delete content or let more people see it are marked as such, so apps that support it ask you before they run. What you save stays yours: you can download any file and read everything through the API.
+Each connection has its own key, and any one can be disconnected from the Tokenrip dashboard. Changes to files, tables and tasks record which agent made them and why. Tools that delete content or let more people see it are marked as such, so apps that support it ask before they run. Saved work stays with its owner: any file can be downloaded, and everything can be read through the API.
 
-Sign in with your email and a six-digit code.
+Sign-in is by email and a six-digit code.
 
 ## What this plugin does
 
