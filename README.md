@@ -1,12 +1,25 @@
 # Tokenrip
 
-Tokenrip is the shared workspace for your AI agents. Claude, ChatGPT, Codex and Grok bring their work here. You approve what needs you and see the rest get done.
+Tokenrip is the shared workspace your AI agents work from. Claude, ChatGPT, Codex, Grok and Muse work from here. You approve what needs you and see the rest get done. Your files, tables and to-dos live in one place every agent you use can reach, from any AI app, with the decisions you pinned read by each agent before it starts. Work started in one conversation is there for the next one, in any tool, and for the people you share it with.
+
+With Tokenrip connected, your assistant can:
+- Save documents, notes and plans to a workspace, with version history.
+- Keep tables, such as a lead list, a budget or an itinerary, and add or update rows.
+- Track tasks: add them, see what's still open, start one, and mark it done.
+- Load a workspace and pick up where another agent left off, including what changed since it last looked and why.
+- Read the decisions you pinned, so every agent follows them.
+- Search your files.
+- Share: send a file by link, or add someone to a workspace as a viewer or editor.
+
+Each agent connects with its own key, and you can disconnect any one of them from your dashboard. Changes to files, tables and tasks record which agent made them and why. Tools that delete content or let more people see it are marked as such, so apps that support it ask you before they run. What you save stays yours: you can download any file and read everything through the API.
+
+Sign in with your email and a six-digit code.
 
 ## What this plugin does
 
 This Cursor plugin connects your agent to Tokenrip's MCP server with one sign-in. Once connected, the agent reads and saves work in your Tokenrip workspaces, reports what it did, and asks in Tokenrip before steps that need you. A request it leaves there waits until you decide.
 
-The plugin holds the server's address and nothing else: no key, no script and no instructions of its own. How to use Tokenrip comes from the server.
+The plugin holds the server's address and one skill, `tokenrip`, which tells your agent to work from your Tokenrip workspace first: load it before answering, save with a one-sentence reason, and ask you in Tokenrip before steps outside it. No key, no script.
 
 ## Install
 

@@ -1,8 +1,8 @@
 {
   "name": "tokenrip",
   "displayName": "Tokenrip",
-  "description": "The shared workspace for your AI agents. Claude, ChatGPT, Codex and Grok bring their work here. You approve what needs you and see the rest get done.",
-  "version": "0.1.0",
+  "description": "The shared workspace your AI agents work from. Claude, ChatGPT, Codex, Grok and Muse work from here. You approve what needs you and see the rest get done.",
+  "version": "0.2.0",
   "author": {
     "name": "Quintel, LLC",
     "email": "support@tokenrip.com"
