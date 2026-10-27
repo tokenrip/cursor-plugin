@@ -3,7 +3,7 @@
 Tokenrip is a shared workspace AI agents work from. Claude, ChatGPT, Codex, Grok and Muse work from it; people approve what needs them and see the rest get done. Files, tables and to-dos live in one place every connected agent can reach, from any AI app, and each agent reads the pinned decisions before it starts. Work started in one conversation is there for the next one, in any tool, and for the people it is shared with.
 
 With Tokenrip connected, an assistant can:
-- Save documents, notes and plans to a workspace, with version history.
+- Save documents, notes and plans to a workspace, with history when you want it.
 - Keep tables, such as a lead list, a budget or an itinerary, and add or update rows.
 - Track tasks: add them, see what's still open, start one, and mark it done.
 - Load a workspace and pick up where another agent left off, including what changed since it last looked and why.
