@@ -1,13 +1,13 @@
 # Tokenrip
 
-Tokenrip is a shared workspace AI agents work from. Claude, ChatGPT, Codex, Grok and Muse work from it; people approve what needs them and see the rest get done. Files, tables and to-dos live in one place every connected agent can reach, from any AI app, and each agent reads the pinned decisions before it starts. Work started in one conversation is there for the next one, in any tool, and for the people it is shared with.
+Tokenrip gives connected agents a shared workspace for files, editable tables, tasks and saved decisions. Agents continue running in their existing apps. Saved records are available to the people and connected agents granted access to that workspace.
 
 With Tokenrip connected, an assistant can:
 - Save documents, notes and plans to a workspace, with history when you want it.
 - Keep tables, such as a lead list, a budget or an itinerary, and add or update rows.
 - Track tasks: add them, see what's still open, start one, and mark it done.
 - Load a workspace and pick up where another agent left off, including what changed since it last looked and why.
-- Read the pinned decisions, so every agent follows them.
+- Read the pinned decisions as shared project context.
 - Search a workspace's files.
 - Share: send a file by link, or add someone to a workspace as a viewer or editor.
 
@@ -17,18 +17,31 @@ Sign-in is by email and a six-digit code.
 
 ## What this plugin does
 
-This Cursor plugin connects your agent to Tokenrip's MCP server with one sign-in. Once connected, the agent reads and saves work in your Tokenrip workspaces, reports what it did, and asks in Tokenrip before steps that need you. A request it leaves there waits until you decide.
+This Cursor plugin connects your agent to Tokenrip's MCP server with one sign-in. Once connected, the agent can read and save work in your Tokenrip workspaces. The included skill instructs it to report results and use Tokenrip proposals for external actions; this is agent guidance, not enforcement of every action in the host app.
 
 The plugin holds the server's address and one skill, `tokenrip`, which tells your agent when to reach for your Tokenrip workspaces and how to work in them: load a workspace before changing it, give each change a one-sentence reason, and ask you in Tokenrip before a step outside it. No key, no script.
 
 ## Install
 
-1. Add Tokenrip from the app's plugin list.
-2. Sign in when asked, with your email and the six-digit code Tokenrip sends you. A free account is created at sign-in if you don't have one.
+### Add the MCP server manually
 
-Or add `https://api.tokenrip.com/mcp` as a custom MCP server.
+Add this entry to your project's `.cursor/mcp.json`, merging it with any existing `mcpServers` entries:
 
-If you added Tokenrip as a custom MCP server before, remove it first, so the agent sees one Tokenrip server.
+```json
+{
+  "mcpServers": {
+    "tokenrip": {
+      "url": "https://api.tokenrip.com/mcp"
+    }
+  }
+}
+```
+
+See [Cursor's MCP configuration documentation](https://cursor.com/docs/mcp#using-mcpjson). Complete Tokenrip's sign-in when Cursor requests authentication. A new email creates a free account at sign-in. This manual configuration adds the MCP server only; it does not install this repository's packaged `tokenrip` skill.
+
+### Develop and test the packaged plugin
+
+To load both the MCP configuration and skill, follow [Cursor's local plugin testing procedure](https://cursor.com/docs/plugins#test-plugins-locally): copy this repository's plugin files into `~/.cursor/plugins/local/tokenrip`, reload Cursor, and confirm the components in Customize. Avoid loading a second Tokenrip MCP configuration if you already added it manually.
 
 ## Use
 
