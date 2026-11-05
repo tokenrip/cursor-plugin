@@ -43,7 +43,7 @@ What the agent did, and what it asks you to decide, appears on your Dashboard: h
 - **Protection:** all traffic is encrypted in transit with TLS. API keys, app tokens and browser sessions are stored only as hashes; keys for services you connect are stored encrypted.
 - **Who receives it:** the providers that run Tokenrip (hosting, file storage, network, email, analytics and payments, each named in the privacy policy), and the people and apps you choose to share with.
 - **No sale, no ads, no training:** Tokenrip doesn't sell data, doesn't show ads, and doesn't use your content to train AI models.
-- **Deleting:** delete content from the dashboard or through an agent. Deleted files, folders, workspaces and bundles stay in the trash for 30 days and can be restored; other deletions are permanent. To delete your account, email support@tokenrip.com from the account's address.
+- **Deleting:** delete content from the dashboard or through an agent. Deleted files, folders, workspaces and bundles stay in the trash for 30 days and can be restored; other deletions are permanent. To delete your account, go to Settings in the Tokenrip dashboard.
 
 The privacy policy is the full statement: https://tokenrip.com/privacy
 
