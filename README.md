@@ -1,67 +1,44 @@
 # Tokenrip
 
-Tokenrip is a shared workspace AI agents work from. Claude, ChatGPT, Codex, Grok and Muse work from it; people approve what needs them and see the rest get done. Files, tables and to-dos live in one place every connected agent can reach, from any AI app, and each agent reads the pinned decisions before it starts. Work started in one conversation is there for the next one, in any tool, and for the people it is shared with.
+Tokenrip keeps your documents, tables and tasks in workspaces you can come back to. Save a plan in one chat and pick it up in the next, share a workspace with teammates or a client, and connect more than one assistant to the same work. Changes to files, tables and tasks record who made them and why, so whoever picks up the work next can see what happened.
 
-With Tokenrip connected, an assistant can:
-- Save documents, notes and plans to a workspace, with history when you want it.
+With Tokenrip connected, you can ask your assistant to:
+- Save documents, notes and plans to a workspace, and keep earlier versions when you want them.
 - Keep tables, such as a lead list, a budget or an itinerary, and add or update rows.
 - Track tasks: add them, see what's still open, start one, and mark it done.
-- Load a workspace and pick up where another agent left off, including what changed since it last looked and why.
-- Read the pinned decisions, so every agent follows them.
+- Pick up a workspace where you or another assistant left off, and see what changed since the last look.
+- Read the notes and decisions you pin to a workspace before starting work.
 - Search a workspace's files.
-- Share: send a file by link, or add someone to a workspace as a viewer or editor.
+- Share a file by link, or add someone to a workspace as a viewer or editor.
+- Ask and answer questions with the people and assistants in a workspace, in its chat or on a task.
+- Propose an email, post or other step outside the workspace, and wait for your approval before doing it.
 
-Each connection has its own key, and any one can be disconnected from the Tokenrip dashboard. Changes to files, tables and tasks record which agent made them and why. Tools that delete content or let more people see it are marked as such, so apps that support it ask before they run. Saved work stays with its owner: any file can be downloaded, and everything can be read through the API.
-
-Sign-in is by email and a six-digit code.
-
-## What this plugin does
-
-This Cursor plugin connects your agent to Tokenrip's MCP server with one sign-in. Once connected, the agent reads and saves work in your Tokenrip workspaces, reports what it did, and asks in Tokenrip before steps that need you. A request it leaves there waits until you decide.
-
-The plugin holds the server's address and one skill, `tokenrip`, which tells your agent when to reach for your Tokenrip workspaces and how to work in them: load a workspace before changing it, give each change a one-sentence reason, and ask you in Tokenrip before a step outside it. No key, no script.
+You sign in with your email and a six-digit code. Each app you connect gets its own access, which you can revoke from the Tokenrip dashboard at any time.
 
 ## Install
 
-1. Add Tokenrip from the app's plugin list.
-2. Sign in when asked, with your email and the six-digit code Tokenrip sends you. A free account is created at sign-in if you don't have one.
+Add Tokenrip from the plugin list, then sign in when asked. If you added Tokenrip as a custom MCP server before, remove it so the agent sees one Tokenrip server.
 
-Or add `https://api.tokenrip.com/mcp` as a custom MCP server.
+## Try it
 
-If you added Tokenrip as a custom MCP server before, remove it first, so the agent sees one Tokenrip server.
+- What workspaces do I have in Tokenrip?
+- What's left on the task list in our renovation workspace?
+- Pick up where my other agent left off on the launch plan.
 
-## Use
+## What's included
 
-Ask the agent to pick up work in a workspace, for example: "Pick up the launch plan where we left off." It loads the workspace, reads your instructions there, and saves what it makes back to it.
+- **The Tokenrip MCP server** at `https://api.tokenrip.com/mcp`. You sign in with your email and a six-digit code, and a free account is created if you don't have one.
+- **The `tokenrip` skill**, which tells the agent when to use your workspaces, to say why it changed something, and to ask you before a step outside the workspace.
 
-What the agent did, and what it asks you to decide, appears on your Dashboard: https://tokenrip.com/operator
+## Privacy
 
-## Your data
+The plugin connects your assistant to Tokenrip's server at `https://api.tokenrip.com/mcp`. Your assistant sends Tokenrip what you ask it to read or save, a short reason with each change and, when the app provides one, a conversation ID, which is kept only as a one-way hash. Tokenrip keeps your workspaces, deletes what each request sent and got back after 30 days and the rest of its record after a year, never sells your data, and doesn't use your content to train AI models. Uninstalling doesn't revoke access: revoke it on the Agents page of your Tokenrip dashboard.
 
-- **What Tokenrip keeps:** your account (your email address and any profile details you add); what you and your agents put in (files, tables, tasks, folders and workspaces); the name of each connected app and the access granted to it; and a record of what each agent did, when, and whether it worked, with the short reason an agent gives for a change.
-- **Agent requests:** what each request sent and got back is kept for 30 days so problems can be found and fixed. Secrets are removed first, and the contents of files, tables and connection calls are never kept, only their size.
-- **Protection:** all traffic is encrypted in transit with TLS. API keys, app tokens and browser sessions are stored only as hashes; keys for services you connect are stored encrypted.
-- **Who receives it:** the providers that run Tokenrip (hosting, file storage, network, email, analytics and payments, each named in the privacy policy), and the people and apps you choose to share with.
-- **No sale, no ads, no training:** Tokenrip doesn't sell data, doesn't show ads, and doesn't use your content to train AI models.
-- **Deleting:** delete content from the dashboard or through an agent. Deleted files, folders, workspaces and bundles stay in the trash for 30 days and can be restored; other deletions are permanent. To delete your account, go to Settings in the Tokenrip dashboard.
+[Privacy policy](https://tokenrip.com/privacy) · [Terms](https://tokenrip.com/terms)
 
-The privacy policy is the full statement: https://tokenrip.com/privacy
+## Links
 
-## Disconnecting
-
-Uninstalling the plugin does not revoke Tokenrip's access. Revoke the agent on the Agents page: https://tokenrip.com/operator/agents
-
-## Documentation
-
-Connecting over MCP: https://docs.tokenrip.com/getting-started/mcp-server
-
-## Support
-
-Email support@tokenrip.com, or see https://tokenrip.com/support
-
-## Terms
-
-https://tokenrip.com/terms
+[Setup guide](https://tokenrip.com/setup) · [Docs](https://docs.tokenrip.com/getting-started/mcp-server) · [Tool reference](https://tokenrip.com/mcp) · [Support](https://tokenrip.com/support) (support@tokenrip.com)
 
 ## License
 
